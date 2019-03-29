@@ -10,6 +10,7 @@ output:
 En este ejercicio plantearemos un problema de factorización de una matriz no negativa que representará el número de veces que cierta persona ha votado a cierto partido político en los últimos años.
 
 1. Construcción de la matriz de datos. Estos son los votos de cada persona:
+<<<<<<< HEAD
   * 1 Podemos, 2 PSOE.
   * 2 Podemos, 1 PSOE, 1 Ciudadanos.
   * 6 Vox.
@@ -34,11 +35,27 @@ p8 <- c(0, 0, 0, 0, 1)
 
 X <- sapply( list(p1, p2, p3, p4, p5, p6, p7, p8), function (x) {length (x) <- 5; return (x)})
 
+=======
+  * Irene: 1 Podemos, 2 PSOE.
+  * Pepe: 2 Podemos, 1 PSOE, 1 Ciudadanos.
+  * Francisco: 6 Vox.
+  * Luisa: 1 Ciudadanos, 3 PP, 2 Vox.
+  * Cayetano: 4 Ciudadanos, 1 PP.
+  * Eva: 2 Podemos.
+  * Eugenia: 1 Podemos.
+  * Mario: 1 Vox
+  
+Construye la matriz objetivo en la que las columnas son personas y las filas partidos políticos.
+
+```{r, echo=F}
+# CÓDIGO
+>>>>>>> old_unsupervised
 ```
 
 2. Factorizar la matrix **X** para distintas dimensiones latentes
 
 ```{r, echo=F, message=FALSE, warning=FALSE, comment=FALSE, results=FALSE}
+<<<<<<< HEAD
 library(NMF)
 
 d = 3
@@ -58,3 +75,15 @@ H <- coef(pol_nmf)
 ```
 
 3. Interpretar los clusters políticos.
+=======
+# CÓDIGO
+```
+
+3. Interpretar los clusters políticos.
+
+4. Reconstruye la matriz y recomienda partidos a los que votar a las diferentes personas.
+
+```{r, echo=F, message=FALSE, warning=FALSE, comment=FALSE, results=FALSE}
+# CÓDIGO
+```
+>>>>>>> old_unsupervised
